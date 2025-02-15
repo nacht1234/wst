@@ -1,0 +1,380 @@
+/* codm wiki css */
+
+/* body css */
+body {
+    font-family: 'Monaco', monospace;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-mode {
+    background-color: #ffffff;
+    color: black; 
+}
+
+/* header css */
+header {
+    background: linear-gradient(135deg, #333, #000);
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(45deg, #ffcc00, #ff6600);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header.light-mode {
+    background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+}
+
+header.light-mode h1 {
+    background: linear-gradient(135deg, #ffcccc, #cc0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* nav css */
+nav {
+    background-color: #333; /* Dark mode background */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ffcc00;
+}
+
+nav.light-mode {
+    background-color: #f0f0f0;
+}
+
+nav.light-mode ul li a {
+    color: black;
+}
+
+nav.light-mode ul li a:hover {
+    background-color: #ffcccc;
+}
+
+/* main css */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* article css */
+article {
+    background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+article.light-mode {
+    background: linear-gradient(135deg, #ffffff, #f0f0f0);
+}
+
+article h2 {
+    color: #ffcc00;
+}
+
+article h3 {
+    color: #ffcc00;
+}
+
+article.light-mode h2,
+article.light-mode h3 {
+    color: #ff6600;
+}
+
+article.light-mode p {
+    color: #333;
+}
+
+/* mark css */
+mark {
+    background-color: #ffcc00;
+}
+
+mark.light-mode {
+    background-color: #ffcccc;
+}
+
+/* figures css */
+figure {
+    margin: 25px 0;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+figure img:hover {
+    transform: scale(1.05);
+}
+
+figcaption {
+    font-style: italic;
+    color: #aaa;
+}
+
+figcaption.light-mode {
+    color: #333;
+}
+
+/* details css */
+details {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+details.light-mode {
+    background-color: #f0f0f0;
+}
+
+details summary {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #ffcc00;
+}
+
+details.light-mode summary {
+    color: #ff6600;
+}
+
+details p {
+    margin: 10px 0 0;
+    font-size: 1rem;
+    color: #ddd;
+}
+
+details.light-mode p {
+    color: #333;
+}
+
+/* aside css */
+aside {
+    background: linear-gradient(135deg, #333, #1a1a1a);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+}
+
+aside.light-mode {
+    background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+}
+
+aside h3 {
+    color: #ffcc00;
+}
+
+aside.light-mode h3 {
+    color: #ff6600;
+}
+
+aside ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+aside ul li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color: #ddd;
+}
+
+aside.light-mode ul li {
+    color: #333;
+}
+
+/* footer css */
+footer {
+    background: linear-gradient(135deg, #333, #000);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
+}
+
+footer a {
+    color: #2c4699;
+}
+
+footer a:hover {
+    color: #224ac9;
+}
+
+footer.light-mode {
+    background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+}
+
+footer.light-mode a {
+    color: #ff6600;
+}
+
+footer.light-mode a:hover {
+    color: #ffcc00;
+}
+
+/* page responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    article {
+        padding: 15px;
+    }
+
+    .image-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #back-to-top {
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        gap: 5px;/
+    }
+
+    .image-container {
+        grid-template-columns: 1fr;
+    }
+
+    #back-to-top {
+        padding: 8px 10px;
+    }
+}
+
+/* container for the figures/images */
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+/* css for the figures */
+.image-container figure {
+    margin: 0;
+    text-align: center;
+}
+
+/* css for the images */
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    width: 300px;
+    height: 150px;
+}
+
+/* css for the captions */
+.image-container figcaption {
+    margin-top: 8px;
+    font-style: italic;
+}
+
+.image-container figure details {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.image-container figure details.light-mode {
+    background-color: #f0f0f0;
+}
+
+.image-container figure details summary {
+    font-weight: lighter;
+    font-size: 1.1rem;
+    color: #e8e4c9;
+}
+
+.image-container figure details.light-mode summary {
+    color: #ff6600;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+#back-to-top:hover {
+    background-color: #ffcc00;
+}
