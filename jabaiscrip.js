@@ -66,3 +66,10 @@ backToTopButton.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+
+// Toggle navigation menu on hamburger click
+const hamburger = document.getElementById('hamburger');
+
+hamburger.addEventListener('click', () => {
+    nav.classList.toggle('active');
+});
